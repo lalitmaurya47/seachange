@@ -34,8 +34,14 @@
 <div class="container">
 	<h2>Overview</h2>
     <div class="overview">
-    <p>Deep neural networks (DNNs) have no doubt brought great successes to a wide range of applications in computer vision, computational linguistics and AI. However, foundational principles underlying the DNNs’ success and their resilience to adversarial attacks are still largely missing. Interpreting and theorizing the internal mechanisms of DNNs becomes a compelling yet controversial topic. The statistical methods and rule-based methods for network interpretation have much to offer in semantically disentangling inference patterns inside DNNs and quantitatively explaining the decisions made by DNNs. Rethinking DNNs explicitly toward building explainable systems from scratch is another interesting topic, including new neural architectures, new parameter estimation methods, new training protocols, and new interpretability-sensitive loss functions.</p>
-    <p>This workshop aims to bring together researchers, engineers as well as industrial practitioners, who concern about interpretability, safety, and reliability of artificial intelligence. Joint force efforts along this direction are expected to open the black box of DNNs and, ultimately, to bridge the gap between connectionism and symbolism of AI research. The main theme of the workshop is therefore to build up consensus on a variety of topics including motivations, typical methodologies, prospective innovations of transparent and trustworthy AI. Research outcomes are also expected to have profound influences on critical industrial applications such as medical diagnosis, finance, and autonomous driving.</p>
+		
+	<p>This study focuses on predicting CO₂ concentration in the Portsmouth port area using machine learning techniques. The primary objective is to identify the most effective model for forecasting CO₂ levels by analyzing environmental and port-related data. A time-series feature window approach is used, where past data is processed to generate predictive inputs. The study categorizes CO₂ levels into four classes—safe, moderate, high (dangerous), and severe—based on established climate references.<p>
+	<p>To achieve accurate predictions, three machine learning models—Logistic Regression, Random Forest, and Extreme Gradient Boosting (XGBoost)—are implemented and compared. The dataset is processed, flattened, and divided into training and testing subsets. Statistical methods, including beta coefficients and odds ratios in Logistic Regression, provide insights into feature importance. Additionally, SHAP (SHapley Additive exPlanations) analysis is performed to further evaluate the influence of individual features.<p>
+	<p>Results indicate that a 24-hour time-series window is optimal for forecasting hourly CO₂ levels. Among the models, XGBoost demonstrates superior performance in terms of recall, precision, and AUC, making it the most effective predictor. Logistic Regression aids in understanding feature contributions, and SHAP analysis validates the key influencing factors.<p>
+	<p>The study concludes that machine learning models, particularly XGBoost, offer a reliable approach to monitoring and predicting CO₂ concentrations in urban port environments. The insights from this research can aid in developing better environmental management strategies and improving climate-related decision-making.<p>
+
+
+    
 <!--    <p>This tutorial is to broadly engage the computer vision community with the topic of interpretability and explainability in models used in computer vision. We will introduce the definition of interpretability and why it is important, and have a review on visualization and interpretation methodologies for analyzing both the <em>data</em> and the <em>models</em> in computer vision.
 </p>
 -->
@@ -109,39 +115,61 @@
   		</table>
     </div>
 </div> -->
+<!-- </br> -->
+<!-- <div class="container"> -->
+  <!-- <h2>Topics</h2> -->
+    <!-- <div class="schedule"> -->
+    	<!-- <p>Topics of interests include, but are not limited to, following fields</p> -->
+        <!-- <ul> -->
+            <!-- <li>Theories of interpretable AI models.</li> -->
+            <!-- <li>Visualizing feature representations in deep neural networks.</li> -->
+            <!-- <li>Deep coupling of neural networks and grammars or graphical models</li> -->
+            <!-- <li>Deep coupling of AI models and the theory of mind</li> -->
+            <!-- <li>Qualitative and quantitative diagnosis and analysis of the decision-making process of deep models.</li> -->
+            <!-- <li>Probabilistic logic interpretation of deep learning.</li> -->
+            <!-- <li>Causality reasoning and learning</li> -->
+            <!-- <li>Safety and fairness of artificial intelligence models.</li> -->
+            <!-- <li>Industrial applications of trustworthy AI, e.g. in medical diagnosis, autonomous driving, and finance.</li> -->
+            <!-- <li>Evaluation of interpretable AI systems.</li> -->
+        <!-- </ul> -->
+        <!-- <p>All above topics are core issues in the development of explainable AI and have received an increasing attention in recent years. We believe these topics will receive broad interests in fields of computer vision and machine learning.</p> -->
+    <!-- </div> -->
+<!-- </div> -->
+
 </br>
+
 <div class="container">
-  <h2>Topics</h2>
-    <div class="schedule">
-    	<p>Topics of interests include, but are not limited to, following fields</p>
-        <ul>
-            <li>Theories of interpretable AI models.</li>
-            <li>Visualizing feature representations in deep neural networks.</li>
-            <li>Deep coupling of neural networks and grammars or graphical models</li>
-            <li>Deep coupling of AI models and the theory of mind</li>
-            <li>Qualitative and quantitative diagnosis and analysis of the decision-making process of deep models.</li>
-            <li>Probabilistic logic interpretation of deep learning.</li>
-            <li>Causality reasoning and learning</li>
-            <li>Safety and fairness of artificial intelligence models.</li>
-            <li>Industrial applications of trustworthy AI, e.g. in medical diagnosis, autonomous driving, and finance.</li>
-            <li>Evaluation of interpretable AI systems.</li>
-        </ul>
-        <p>All above topics are core issues in the development of explainable AI and have received an increasing attention in recent years. We believe these topics will receive broad interests in fields of computer vision and machine learning.</p>
-    </div>
+  <h2>Flow Diagram</h2>
+  <div align="center">
+    <img src="src/figures/mainFlow.jpg" width="1000" alt="Figure Description">
+    <p><i>Figure 1: CO₂ concentration prediction framework</i></p>
+  </div>
 </div>
 
 </br>
 
 <div class="container">
-  <h2>Calling for papers</h2>
+  <h2>Data CSV</h2>
+  <div align="center">
+    <img src="src/figures/datacsv.jpg" width="800" alt="Figure Description">
+    <p><i>Figure 1: CO₂ concentration prediction framework</i></p>
+  </div>
+</div>
+
+
+</br>
+
+<div class="container">
+  <h2>Results Summary </h2>
     <div class="overview">
-    	<p>This workshop is a half-day event, which will include invited talks, spotlight and poster presentations of accepted papers.
-    	</br>We are calling for extended abstracts with 2–4 pages. Papers accepted by this workshop can be re-submitted to other conferences or journals.Please submit your papers to <a href="mailto:cvpr19xai@gmail.com">cvpr19xai@gmail.com </a></p>
-    	<ul>
-            <li><b>Submission deadline:</b> March, 30th, 2019</li>
-            <li><b>Notification date:</b> April, 11st, 2019</li>
-            <li><b>Camera-ready deadline:</b> April 18th, 2019</li>
-        </ul>
+    	<p>Developed advanced time series models and performed window analysis using a 24-hour window size to predict hourly CO2 levels.
+		<p>Achieved high model accuracy (~90%) using XGBoost for predicting peak CO2 levels.​
+		<p>The model has been validated and shows excellent performance in identifying critical thresholds.​​
+
+    	<div align="center">
+			<img src="src/figures/results.jpg" width="600" alt="Figure Description">
+			<p><i>Figure 1: CO₂ concentration prediction framework</i></p>
+		</div>
 <!--    <p>This tutorial is to broadly engage the computer vision community with the topic of interpretability and explainability in models used in computer vision. We will introduce the definition of interpretability and why it is important, and have a review on visualization and interpretation methodologies for analyzing both the <em>data</em> and the <em>models</em> in computer vision.
 </p>
 -->
@@ -200,8 +228,36 @@
 
 </br>
 
+
+</br>
+
+<div class="container">
+  <h2>Partners</h2>
+  <div align="center">
+    
+    <div class="partner" style="display:inline-block; margin:20px;">
+      <img src="src/figures/partner1.png" width="150" alt="Partner 1 Logo">
+      <p>Partner 1</p>
+    </div>
+
+    <div class="partner" style="display:inline-block; margin:20px;">
+      <img src="src/figures/partner2.png" width="150" alt="Partner 2 Logo">
+      <p>Partner 2</p>
+    </div>
+
+    <div class="partner" style="display:inline-block; margin:20px;">
+      <img src="src/figures/partner3.png" width="150" alt="Partner 3 Logo">
+      <p>Partner 3</p>
+    </div>
+
+  </div>
+</div>
+
+</br>
+
+
 <div class="containersmall">
-    <p>Please contact <a href="mailto:zqs1022@sjtu.edu.cn">Quanshi Zhang</a> if you have question. </p>
+    <p>Please contact <a href="mailto:lalit.maurya@port.ac.uk">XXX</a> if you have question. </p>
 </div>
 
 <!--<p align="center" class="acknowledgement">Last updated: Jan. 6, 2017</p>-->
